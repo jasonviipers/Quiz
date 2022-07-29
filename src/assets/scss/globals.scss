@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--themeColor: #e82e33;
+		--primaryBtn: #ff2e33;
+		--white: #ffffff;
+		--mateBlack: #212121;
+		--black: #000;
+	}
+}
