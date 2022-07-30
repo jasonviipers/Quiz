@@ -4,10 +4,13 @@
 
 @layer base {
 	:root {
-		--themeColor: #e82e33;
-		--primaryBtn: #ff2e33;
-		--white: #ffffff;
-		--mateBlack: #212121;
-		--black: #000;
+		--bg-main-color: #0f172a;
+		--bg-secondary-color: #f9fafb;
+		--bg-ms-color: #ee5253;
+	}
+
+	html,
+	body {
+		background-color: var(--bg-main-color);
 	}
 }
