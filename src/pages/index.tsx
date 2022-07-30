@@ -1,3 +1,4 @@
+import Feature from '@/components/Feature/Feature';
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Slider from '@/components/Slider/Slider';
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
 			<main>
 				<Header />
 				<Slider />
+				<Feature/>
 			</main>
 
 			<Footer />
