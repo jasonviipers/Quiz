@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Feature = () => {
@@ -10,9 +11,7 @@ const Feature = () => {
 						{'Featured Categories'}
 					</h2>
 					<p className="text-sm sm:text-base text-second-color-400 sm:truncate text-gray-300">
-						{
-							'We provide you the best quiz.'
-						}
+						{'We provide you the best quiz.'}
 					</p>
 				</div>
 				<div className="flex mt-4 md:mt-0">
@@ -22,64 +21,78 @@ const Feature = () => {
 				</div>
 			</div>
 			<div className="grid overflow-hidden grid-cols-2 gap-4 px-4 mx-auto max-w-7xl sm:py-6 sm:px-6 lg:px-8 sm:grid-cols-3 lg:grid-cols-6 sm:gap-8">
-				<a className="relative group bg-white p-6 rounded-lg hover:shadow-lg">
-					<div>
-						<span className="rounded-lg inline-flex p-2 ring-4 ring-white bg-main-color">
-							<Image
-								src="/assets/img/loading.gif"
-								width={48}
-								height={48}
-								alt="Fire Services"
-								className="h-12 w-12 opacity-70"
-								aria-hidden="true"
-							/>
-						</span>
-					</div>
-					<div className="mt-8">
-						<h3 className="text-lg text-second-color-600 font-bold">
-							{'Fireman Services'}
-						</h3>
-						<p className="mt-2 text-sm text-second-color-400">
-							{' Categories for all Fireman services'}
-						</p>
-					</div>
-				</a>
-				<a className="relative group bg-white p-6 rounded-lg hover:shadow-lg">
-					<div className="">
-						<span className="rounded-lg inline-flex p-2 ring-4 ring-white bg-ms-color">
-                        <Image
-								src="/assets/img/loading.gif"
-								width={48}
-								height={48}
-								alt="Car Services"
-								className="h-12 w-12 opacity-70"
-								aria-hidden="true"
-							/>
-                        </span>
-                        <div className="mt-8">
-                            <h3 className="text-lg text-second-color-600 font-bold">{'Fireman Services'}</h3>
-                            <p className="mt-2 text-sm text-second-color-400">{' Categories for all Fireman services'}</p>
-                        </div>
-					</div>
-				</a>
-                <a className="relative group bg-white p-6 rounded-lg hover:shadow-lg">
-                    <div className="">
-                        <span className="rounded-lg inline-flex p-2 ring-4 ring-white bg-ls-color">
-                        <Image
-								src="/assets/img/loading.gif"
-								width={48}
-								height={48}
-								alt="Car Services"
-								className="h-12 w-12 opacity-70"
-								aria-hidden="true"
-							/> 
-                        </span>
-                        <div className="mt-8">
-                            <h3 className="text-lg text-second-color-600 font-bold">{'Fireman Services'}</h3>
-                            <p className="mt-2 text-sm text-second-color-400">{' Categories for all Fireman services'}</p>
-                        </div>
-                    </div>
-                </a>
+				<Link href="/">
+					<a className="relative group bg-white p-6 rounded-lg hover:shadow-lg">
+						<div>
+							<span className="rounded-lg inline-flex p-2 ring-4 bg-slate-900">
+								<Image
+									src="/assets/img/fireman.png"
+									width={48}
+									height={48}
+									alt="Fire Services"
+									className="h-12 w-12 opacity-70"
+									aria-hidden="true"
+								/>
+							</span>
+						</div>
+						<div className="mt-8">
+							<h3 className="text-lg text-second-color-600 font-bold">
+								{'Fireman Services'}
+							</h3>
+							<p className="mt-2 text-sm text-second-color-400">
+								{' Categories for all Fireman services'}
+							</p>
+						</div>
+					</a>
+				</Link>
+				<Link href="/">
+					<a className="relative group bg-white p-6 rounded-lg hover:shadow-lg">
+						<div className="">
+							<span className="rounded-lg inline-flex p-2 ring-4 bg-slate-900">
+								<Image
+									src="/assets/img/firefighter.png"
+									width={48}
+									height={48}
+									alt="Car Services"
+									className="h-12 w-12 opacity-70"
+									aria-hidden="true"
+								/>
+							</span>
+							<div className="mt-8">
+								<h3 className="text-lg text-second-color-600 font-bold">
+									{'Fireman Services'}
+								</h3>
+								<p className="mt-2 text-sm text-second-color-400">
+									{' Categories for all Fireman services'}
+								</p>
+							</div>
+						</div>
+					</a>
+				</Link>
+				<Link href="/">
+					<a className="relative group bg-white p-6 rounded-lg hover:shadow-lg">
+						<div className="">
+							<span className="rounded-lg inline-flex p-2 ring-4 bg-slate-900">
+								<Image
+									src="/assets/img/firef.png"
+									width={48}
+									height={48}
+									alt="Car Services"
+									className="h-12 w-12 opacity-70"
+									aria-hidden="true"
+								/>
+							</span>
+							<div className="mt-8">
+								<h3 className="text-lg text-second-color-600 font-bold">
+									{'Fireman Services'}
+								</h3>
+								<p className="mt-2 text-sm text-second-color-400">
+									{' Categories for all Fireman services'}
+								</p>
+							</div>
+						</div>
+					</a>
+				</Link>
 			</div>
 		</div>
 	);
