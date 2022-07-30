@@ -7,9 +7,10 @@ module.exports = {
 	variants: {
 		extend: {
 			colors: {
-				'main-color': 'var(--bg-main-color)',
-				'ms-color': 'var(--bg-ms-color)',
-				'ls-color': 'var(--bg-ls-color)',
+				'bg-main-color': 'var(--bg-main-color)',
+				'bg-secondary-color': 'var(--bg-secondary-color)',
+				'bg-ms-color': 'var(--bg-ms-color)',
+
 			}
 		}
 	},
