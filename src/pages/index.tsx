@@ -4,7 +4,6 @@ import Header from '@/components/Header/Header';
 import Slider from '@/components/Slider/Slider';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 
 const Home: NextPage = () => {
 	return (
@@ -21,9 +20,9 @@ const Home: NextPage = () => {
 			<main>
 				<Header />
 				<Slider />
-				<Feature/>
+				<Feature />
 			</main>
-
+				
 			<Footer />
 		</div>
 	);
